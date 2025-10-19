@@ -1,63 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="head">salam bar shoma</header>
-    <div class="container">
-      <div class="row">
-        <hr>
-        <div id="bio" class="col-12 col-lg-6 text-center">
-          <h1>Pourya</h1>
-          <img src="photo.jpg" class="img-fluid" alt="My Photo">
-            <figcaption>This is my Photoe</figcaption>
-            <hr>
-        </div>
-        <div id="more" class="col-12 col-lg-6">
-          <h2>Favorite Music Artists</h2>
-            <hr>
-          <ul>
-            <li>Metallica</li>
-            <li>Bob Marley</li>
-            <li>Madonna</li>
-            <li>The Beatles</li>
-            <li>Pink Floyd</li>
-          </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Awesome Webpage</title>
 
-          <h2>Favorite Films</h2>
-          <ol>
-            <li>Pulp Fiction</li>
-            <li>The Godfather</li>
-            <li>The Lord of the Rings</li>
-            <li>Iron Man</li>
-            <li>Inception</li>
-          </ol>
+  <!-- Basic Open Graph Meta Tags -->
+  <meta property="og:title" content="My Awesome Webpage">
+  <meta property="og:description" content="This is a simple example showing how to use Open Graph meta tags in an HTML document.">
+  <meta property="og:image" content="https://example.com/images/preview.jpg">
+  <meta property="og:url" content="https://example.com/awesome-page">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
 
-          <button id="here" class="btn btn-primary" onclick="clidk()">Click to see what happens</button>
-
-          <script>
-            function clidk() {
-              const element = document.getElementById('here');
-              if (element.className === "btn btn-primary"){
-                const input = prompt("What do you want to be displayed")
-                element.className = "btn btn-secondary";
-                element.innerText = input;
-              }
-              else {
-                element.className = "btn btn-primary";
-                element.innerText = "Click if you want to get back";
-              }
-              
-            }
-          </script>
-        </div>
-      </div>
-    </div>
-
-    <script src="bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Optional: Twitter Card (for better Twitter previews) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My Awesome Webpage">
+  <meta name="twitter:description" content="This is a simple example showing how to use Open Graph meta tags in an HTML document.">
+  <meta name="twitter:image" content="https://example.com/images/preview.jpg">
+</head>
+<body>
+  <h1>Welcome to My Awesome Webpage</h1>
+  <p>This page demonstrates how to include Open Graph protocol tags.</p>
+</body>
 </html>
