@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="head">salam bar shoma</header>
+    <div class="container">
+      <div class="row">
+        <hr>
+        <div id="bio" class="col-12 col-lg-6 text-center">
+          <h1>Pourya</h1>
+          <img src="photo.jpg" class="img-fluid" alt="My Photo">
+            <figcaption>This is my Photoe</figcaption>
+            <hr>
+        </div>
+        <div id="more" class="col-12 col-lg-6">
+          <h2>Favorite Music Artists</h2>
+            <hr>
+          <ul>
+            <li>Metallica</li>
+            <li>Bob Marley</li>
+            <li>Madonna</li>
+            <li>The Beatles</li>
+            <li>Pink Floyd</li>
+          </ul>
+
+          <h2>Favorite Films</h2>
+          <ol>
+            <li>Pulp Fiction</li>
+            <li>The Godfather</li>
+            <li>The Lord of the Rings</li>
+            <li>Iron Man</li>
+            <li>Inception</li>
+          </ol>
+
+          <button id="here" class="btn btn-primary" onclick="clidk()">Click to see what happens</button>
+
+          <script>
+            function clidk() {
+              const element = document.getElementById('here');
+              if (element.className === "btn btn-primary"){
+                const input = prompt("What do you want to be displayed")
+                element.className = "btn btn-secondary";
+                element.innerText = input;
+              }
+              else {
+                element.className = "btn btn-primary";
+                element.innerText = "Click if you want to get back";
+              }
+              
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
